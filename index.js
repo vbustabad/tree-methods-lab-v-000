@@ -21,7 +21,6 @@ function findOrAdd(rootNode, newNode){
     currentNode = rootNode.right;
     if(currentNode){
       findOrAdd(currentNode, newNode);
-      return true;
     } else {
       rootNode.right = newNode;
     }

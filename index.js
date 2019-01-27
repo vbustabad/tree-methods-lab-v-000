@@ -32,8 +32,8 @@ function findOrAdd(rootNode, newNode){
 function max(node) {
   let currentNode = node.data;
 
-  while (currentNode.right !== null) {
-    currentNode = currentNode.right;
+  while (currentNode.right.data !== null) {
+    currentNode = currentNode.right.data;
   }
 
   return currentNode.data;
@@ -42,8 +42,8 @@ function max(node) {
 function min(node) {
   let currentNode = node.data;
 
-  while (currentNode.left !== null) {
-    currentNode = currentNode.left;
+  while (currentNode.left.data !== null) {
+    currentNode = currentNode.left.data;
   }
 
   return currentNode.data;

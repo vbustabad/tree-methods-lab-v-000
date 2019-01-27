@@ -31,17 +31,21 @@ function findOrAdd(rootNode, newNode){
 }
 
 function max(node) {
-  if (node.right !== null) {
-    return max(node.right);
-  } else {
-    return node;
+  let currentNode = node;
+
+  while (currentNode.right !== null) {
+    currentNode = currentNode.right;
   }
+
+  return currentNode.data;
 }
 
 function min(node) {
-  if (node.left !== null) {
-    return min(node.left);
-  } else {
-    return node;
+  let currentNode = node;
+
+  while (currentNode.left !== null) {
+    currentNode = currentNode.left;
   }
+
+  return currentNode.data;
 }

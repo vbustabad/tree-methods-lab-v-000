@@ -30,10 +30,11 @@ function findOrAdd(rootNode, newNode){
 }
 
 function max(node) {
-  let rootValue = node.data;
-  let leftChildValue = node.left.data;
-  let rightChildValue = node.right.data;
-  
-  if(currentData < childData){
-    
+  let rootNode = node.data;
+ 
+  while (rootNode.left !== null) {
+    rootNode = rootNode.left;
+  }
+
+  return rootNode.data;
 }

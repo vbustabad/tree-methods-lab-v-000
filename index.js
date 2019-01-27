@@ -31,7 +31,7 @@ function findOrAdd(rootNode, newNode){
 
 function max(node) {
   let rootNode = node.data;
- 
+
   while (rootNode.left !== null) {
     rootNode = rootNode.left;
   }

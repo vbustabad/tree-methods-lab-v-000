@@ -43,7 +43,7 @@ function min(node) {
   let currentNode = node.data;
 
   if (currentNode.left !== null) {
-    max(currentNode.left);
+    min(currentNode.left);
   } else {
     return currentNode;
   }

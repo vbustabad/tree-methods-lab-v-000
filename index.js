@@ -13,16 +13,16 @@ function findOrAdd(rootNode, newNode){
   if(newNode.data < rootNode.data){
       currentNode = rootNode.left;
       if(currentNode){
-        findOrAdd(currentNode, newNode);
+        return findOrAdd(currentNode, newNode);
       } else {
-        rootNode.left = newNode;
+        return rootNode.left = newNode;
       }
   } else if(newNode.data > rootNode.data) {
     currentNode = rootNode.right;
     if(currentNode){
-      findOrAdd(currentNode, newNode);
+      return findOrAdd(currentNode, newNode);
     } else {
-      rootNode.right = newNode;
+      return rootNode.right = newNode;
     }
   } else {
     return true;

@@ -37,7 +37,7 @@ function max(node) {
     currentNode = currentNode.right;
   }
 
-  return currentNode.data;
+  return max(currentNode.right);
 }
 
 function min(node) {
@@ -47,5 +47,5 @@ function min(node) {
     currentNode = currentNode.left;
   }
 
-  return currentNode.data;
+  return min(currentNode.left);
 }

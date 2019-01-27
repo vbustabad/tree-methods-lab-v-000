@@ -33,7 +33,7 @@ function max(node) {
   let currentNode = node.data;
 
   while (currentNode.right !== null) {
-    currentNode = currentNode.right;
+    max(currentNode.right);
   }
 
   return currentNode.data;
@@ -43,7 +43,7 @@ function min(node) {
   let currentNode = node.data;
 
   while (currentNode.left !== null) {
-    currentNode = currentNode.left;
+    min(currentNode.left);
   }
 
   return currentNode.data;

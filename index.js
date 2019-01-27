@@ -45,4 +45,3 @@ function min(node) {
     return node;
   }
 }
-
